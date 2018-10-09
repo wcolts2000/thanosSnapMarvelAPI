@@ -11,6 +11,7 @@
   flex-direction: column;
   position: relative;
   background-color: #000;
+  min-height: 100vh;
   height: 100%;
   width: 100vw;
   color: white;
