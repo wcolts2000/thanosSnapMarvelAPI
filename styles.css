@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: cursive;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #000;
+  height: 100%;
+  width: 100vw;
+  color: white;
+  background-image: url(uc-san-diego-space-red.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: tomato;
+  text-shadow: -3px 3px 2px #000; 
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+}
+
+div > img {
+  border-radius: 10px;
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.6);
+  border: 3px ridge aqua;
+}
+
+h3 {
+  text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  bottom: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+}
+
+footer a {
+  color: yellow;
+}
+
+#thanos {
+  transition: all 1.8s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  border: 8px ridge crimson;
+  width: 150px;
+  height: 150px;
+}
+
+#thanos:hover {
+  transform: scale(2.5);
+  transform-origin: top;
+  cursor: pointer;
+}
+
+#snap {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  transition-duration: 3.5s;
+}
+
+.character {
+  transition-duration: 2s;
+}
+
+#theTruth {
+  font-size: 2rem;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  color: yellow;
+  transition-duration: 2s;
+}
